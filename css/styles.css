@@ -24,40 +24,40 @@ h3 {
     font-size: 1.5rem;
 }
 
+b {
+    color: #E79115;
+}
+
 .logoImage {
     height: 44px;
     width: 176.4px;
 }
 
-/* Clase para imagenes del carrusel, agregar el numero correspondiente al orden */
 .sliderImage {
     width: 100%;
     height: 520px;
 }
 
-/* Agregar flexbox luego para acomodar items*/
 .siteHeader {
     background-color: #E79115;
     position: sticky;
     top: 0;
     width: 100%;
-    
-}
-
-/* Para mantener el texto en un contenedor */
-.sliderTextWrapper {
-    width: 40%;
-    bottom: 50%;
-    padding-left: 10%;
 }
 
 .salesButton {
     font-weight: bold;
-    background-color: bisque;
+    background-color: white;
+    border: 1px solid black;
     cursor: pointer;
     height: 25px;
-    width: 75%;
+    width: 15%;
     text-align: center;
+    transition: background-color 0.5s ease-out;
+}
+
+.salesButton:hover {
+    background-color: #E79115;
 }
 
 .titles {
