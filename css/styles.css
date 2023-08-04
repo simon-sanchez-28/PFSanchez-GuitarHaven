@@ -6,8 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 html {
-    font-family: 'Poppins', sans-serif ;
-    background-color: azure;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAEDE3;
 }
 
 h1 {
@@ -47,10 +47,12 @@ b {
     padding-left: 1rem;
 }
 
-.salesButton, .productButton {
+.salesButton,
+.productButton {
     font-weight: bold;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #a8b8d0;
+    border-radius: 5px;
     cursor: pointer;
     height: 25px;
     width: 20%;
@@ -58,12 +60,13 @@ b {
     transition: background-color 0.5s ease-out;
 }
 
-.salesButton:hover, .productButton:hover {
+.salesButton:hover,
+.productButton:hover {
     background-color: #E79115;
 }
 
 .productButton {
-    width: 40%;
+    width: 100%;
 }
 
 .titles {
@@ -73,28 +76,20 @@ b {
     padding: 1rem 0 1rem 0;
 }
 
-.productBox {
-    height: 320px;
-    width: 20%;
-    align-items: center;
-    text-align: center;
-    border: 3px solid black;
-    display: inline-block;
-}
-
 .productGrid {
     display: grid;
-    align-items: center;
-    justify-content: center;
+    justify-items: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 16px;
+    padding-bottom: 2rem;
 }
-    
+
 .card {
     height: 25rem;
     width: 16rem;
+    border: 1px #a8b8d0 solid;
 }
 
 .productHeader {
@@ -114,11 +109,12 @@ b {
 .pageFooter {
     width: 100%;
     height: 30px;
-    background-color: bisque;
+    background-color: #E79115;
 }
 
-footer>ul>li {
-    display: inline-block;
+.guitarHavenLink {
+    color: #E79115;
+    cursor: pointer;
 }
 
 .copyright {
@@ -131,13 +127,6 @@ footer>ul>li {
     height: 1px;
     background-color: black;
 }
-
-/* si se ve muy feo, se arregla con este flex de abajo */
-
-/* .descriptionWrapper { 
-    display: flex;
-    align-items: center;
-} */
 
 .ourProductImage1 {
     width: 50%;
