@@ -1,0 +1,48 @@
+.ourMaterials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.materialsContainer {
+    display: block;
+    width: 70%;
+    margin-bottom: 20px;
+
+    .materials {
+        display: flex;
+        align-items: center;
+
+        .div1 {
+            flex: 1;
+            margin-left: -2rem;
+
+            @media (min-width: 1440px) {
+                margin-left: 10rem;
+            }
+        }
+
+        .div2 {
+            flex: 2;
+            margin-right: -3rem;
+
+            @media (min-width: 1440px) {
+                margin-right: 10rem;
+            }
+        }
+    }
+}
+
+.materialsImage {
+    width: 120px;
+    height: auto;
+
+    @media (min-width: 320px) {
+        width: 70px;
+    }
+
+    @media (min-width: 768px) {
+        width: 90px;
+    }
+}

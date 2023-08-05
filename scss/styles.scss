@@ -1,0 +1,36 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'products';
+@import 'materials';
+@import 'iframe';
+
+// Globales
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAEDE3;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 1000;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+b {
+    color: #E79115;
+}

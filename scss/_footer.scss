@@ -1,0 +1,21 @@
+.pageFooter {
+    width: 100%;
+    height: 30px;
+    background-color: $primary-color;
+
+    .guitarHavenLink {
+        color: $primary-color;
+        cursor: pointer;
+    }
+
+    .copyright {
+        font-size: 0.7rem;
+        color: grey;
+    }
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}

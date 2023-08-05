@@ -1,0 +1,51 @@
+.siteHeader {
+    background-color: $primary-color;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding-left: 1rem;
+
+    .navbar {
+        &-nav {
+            &-link {
+                &.active {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.logoImage {
+    height: 44px;
+    width: 176.4px;
+}
+
+.salesButton,
+.productButton {
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid $secondary-color;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 25px;
+    width: 20%;
+    text-align: center;
+    transition: background-color 0.5s ease-out;
+
+    &:hover {
+        background-color: $primary-color;
+    }
+}
+
+.productButton {
+    width: 100%;
+}
+
+.titles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
