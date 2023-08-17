@@ -44,13 +44,6 @@
   width: 100%;
 }
 
-.titles {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 0;
-}
-
 .pageFooter {
   width: 100%;
   height: 30px;
@@ -69,6 +62,10 @@
   width: 100%;
   height: 1px;
   background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
 }
 
 .productGrid {
@@ -161,13 +158,13 @@ iframe {
 }
 @media (min-width: 320px) {
   iframe {
-    width: 100%;
+    width: 95%;
     height: 280px;
   }
 }
 @media (min-width: 768px) {
   iframe {
-    width: 100%;
+    width: 95%;
     height: 380px;
   }
 }
@@ -227,6 +224,82 @@ main .descriptionWrapper .description1 {
   }
 }
 
+.aboutUsContainer {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.aboutUsContainer .imageContainer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
+.aboutUsContainer .imageContainer .aboutUsImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.aboutUsContainer .imageContainer .aboutUsImage:nth-child(2n) {
+  margin-right: 0;
+}
+.aboutUsContainer .aboutUsTextWrapper {
+  flex: 1;
+  padding: 20px;
+}
+.aboutUsContainer .aboutUsTextWrapper .aboutUsName {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutUsContainer .imageContainer {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .aboutUsContainer .imageContainer .aboutUsImage {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .aboutUsContainer {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    align-items: center;
+  }
+  .responsiveHidden {
+    display: none;
+  }
+}
+.directionWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+}
+.directionWrapper .mapContainer {
+  width: 90%;
+}
+.directionWrapper .mapContainer iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+.directionWrapper .textContainer {
+  text-align: left;
+  width: 100%;
+}
+.directionWrapper .separator {
+  border-top: 1px solid #ccc;
+  width: 100%;
+  margin: 20px 0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -254,6 +327,13 @@ h3 {
 
 b {
   color: #E79115;
+}
+
+.titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

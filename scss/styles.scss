@@ -5,6 +5,7 @@
 @import 'materials';
 @import 'iframe';
 @import 'ourProductLayout';
+@import 'aboutUsLayout';
 
 // Globales
 * {
@@ -34,4 +35,11 @@ h3 {
 
 b {
     color: #E79115;
+}
+
+.titles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
 }
