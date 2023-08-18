@@ -190,9 +190,10 @@ main .descriptionWrapper .ourProductImage1 {
   max-width: 100%;
   height: auto;
   transition: all 0.5s;
+  border-radius: 10px;
 }
 main .descriptionWrapper .ourProductImage1:hover {
-  transform: scaleY(1.05);
+  transform: scaleY(1.02);
 }
 main .descriptionWrapper .ourProductTextWrapper {
   width: 50%;
@@ -300,6 +301,64 @@ main .descriptionWrapper .description1 {
   margin: 20px 0;
 }
 
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 600px;
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+  background-image: url(../guitarHavenImages/formImages/formBackgroundImg.jpg);
+}
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+}
+.contactForm form input[type=text],
+.contactForm form input[type=number],
+.contactForm form input[type=email] {
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+.contactForm form input[type=text]::placeholder,
+.contactForm form input[type=number]::placeholder,
+.contactForm form input[type=email]::placeholder {
+  opacity: 0.5;
+  padding-left: 2%;
+}
+.contactForm form .termsAndConditions {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-around;
+  color: #E79115;
+  text-shadow: 0 0 3px #000, 0 0 5px #000;
+}
+.contactForm form button {
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid #a8b8d0;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 25px;
+  width: 50%;
+  text-align: center;
+  transition: background-color 0.5s ease-out;
+}
+.contactForm form button:hover {
+  background-color: #E79115;
+  border: 1px solid black;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -327,6 +386,7 @@ h3 {
 
 b {
   color: #E79115;
+  text-shadow: 0 0 3px #000, 0 0 5px #000;
 }
 
 .titles {
@@ -334,6 +394,10 @@ b {
   align-items: center;
   justify-content: center;
   padding: 1rem 0;
+}
+
+.placeholder {
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

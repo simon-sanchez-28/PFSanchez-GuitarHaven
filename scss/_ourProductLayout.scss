@@ -15,9 +15,10 @@ main {
         max-width: 100%;
         height: auto;
         transition: all 0.5s;
+        border-radius: 10px;
 
         &:hover {
-            transform: scaleY(1.05);
+            transform: scaleY(1.02);
         }
       }
   

@@ -1,11 +1,4 @@
-@import 'variables';
-@import 'header';
-@import 'footer';
-@import 'products';
-@import 'materials';
-@import 'iframe';
-@import 'ourProductLayout';
-@import 'aboutUsLayout';
+@import 'variables', 'header', 'footer', 'products', 'materials', 'iframe', 'ourProductLayout', 'aboutUsLayout', 'contactUsForm';
 
 // Globales
 * {
@@ -35,6 +28,7 @@ h3 {
 
 b {
     color: #E79115;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
 }
 
 .titles {
@@ -42,4 +36,8 @@ b {
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
+}
+
+.placeholder {
+    margin-left: 1rem;
 }
