@@ -152,25 +152,25 @@
 iframe {
   display: block;
   margin: 0 auto;
-  width: 90%;
+  width: 75%;
   height: 580px;
   box-shadow: 2px 2px #E79115;
 }
 @media (min-width: 320px) {
   iframe {
-    width: 95%;
+    width: 100%;
     height: 280px;
   }
 }
 @media (min-width: 768px) {
   iframe {
-    width: 95%;
+    width: 80%;
     height: 380px;
   }
 }
 @media (min-width: 1024px) {
   iframe {
-    width: 90%;
+    width: 80%;
     height: 480px;
   }
 }
@@ -207,6 +207,7 @@ main .descriptionWrapper .sectionTitle {
 }
 main .descriptionWrapper .description1 {
   margin-top: 0;
+  width: 100%;
 }
 @media (max-width: 426px) {
   main .descriptionWrapper {
@@ -316,6 +317,22 @@ main .descriptionWrapper .description1 {
   background-size: cover;
   background-position: center;
 }
+.contactForm p {
+  color: white;
+}
+.contactForm::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 90%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
 .contactForm form {
   display: flex;
   flex-direction: column;
@@ -352,7 +369,7 @@ main .descriptionWrapper .description1 {
   border-radius: 5px;
   cursor: pointer;
   height: 25px;
-  width: 50%;
+  width: 30%;
   text-align: center;
   transition: background-color 0.5s ease-out;
 }
@@ -361,7 +378,24 @@ main .descriptionWrapper .description1 {
   border: 1px solid black;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 1024px) {
+  .contactForm::before {
+    width: 80%;
+    backdrop-filter: blur(5px);
+  }
+  .contactForm form {
+    width: 70%;
+  }
+  .contactForm form input[type=text],
+  .contactForm form input[type=number],
+  .contactForm form input[type=email] {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .contactForm::before {
+    width: 100%;
+  }
   .contactForm form {
     width: 100%;
   }
@@ -405,7 +439,7 @@ b {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 0;
+  padding: 2rem 0 2rem 0;
 }
 
 .placeholder {
