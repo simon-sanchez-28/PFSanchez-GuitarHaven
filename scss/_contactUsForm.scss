@@ -10,6 +10,8 @@
     width: 100%;
     margin: 1rem 0 1rem 0;
     background-image: url(../guitarHavenImages/formImages/formBackgroundImg.jpg);
+    background-size: cover;
+    background-position: center;
     form {
         display: flex;
         flex-direction: column;
@@ -23,7 +25,7 @@
             margin-bottom: 1rem;
             border: none;
             border-bottom: 1px solid black;
-            width: 100%;
+            width: 70%;
             &::placeholder {
                 opacity: 0.5;
                 padding-left: 2%;
@@ -52,4 +54,18 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 376px) {
+    .contactForm {
+        form {
+            width: 100%;
+            input[type="text"],
+            input[type="number"],
+            input[type="email"] {
+                width: 80%;
+            }
+        }
+    }
+
 }

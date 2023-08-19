@@ -1,0 +1,11 @@
+@mixin centeredTitles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+@mixin boldFontStyles {
+    color: #E79115;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+}

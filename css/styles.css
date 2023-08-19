@@ -313,6 +313,8 @@ main .descriptionWrapper .description1 {
   width: 100%;
   margin: 1rem 0 1rem 0;
   background-image: url(../guitarHavenImages/formImages/formBackgroundImg.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .contactForm form {
   display: flex;
@@ -328,7 +330,7 @@ main .descriptionWrapper .description1 {
   margin-bottom: 1rem;
   border: none;
   border-bottom: 1px solid black;
-  width: 100%;
+  width: 70%;
 }
 .contactForm form input[type=text]::placeholder,
 .contactForm form input[type=number]::placeholder,
@@ -359,6 +361,16 @@ main .descriptionWrapper .description1 {
   border: 1px solid black;
 }
 
+@media screen and (max-width: 376px) {
+  .contactForm form {
+    width: 100%;
+  }
+  .contactForm form input[type=text],
+  .contactForm form input[type=number],
+  .contactForm form input[type=email] {
+    width: 80%;
+  }
+}
 * {
   padding: 0;
   margin: 0;

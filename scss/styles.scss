@@ -1,4 +1,4 @@
-@import 'variables', 'header', 'footer', 'products', 'materials', 'iframe', 'ourProductLayout', 'aboutUsLayout', 'contactUsForm';
+@import 'variables', 'header', 'footer', 'products', 'materials', 'iframe', 'ourProductLayout', 'aboutUsLayout', 'contactUsForm', 'mixins';
 
 // Globales
 * {
@@ -27,15 +27,11 @@ h3 {
 }
 
 b {
-    color: #E79115;
-    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    @include boldFontStyles;
 }
 
 .titles {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 0;
+    @include centeredTitles;
 }
 
 .placeholder {
