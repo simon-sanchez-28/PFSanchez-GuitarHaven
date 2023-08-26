@@ -37,3 +37,15 @@ b {
 .placeholder {
     margin-left: 1rem;
 }
+
+.noShadow {
+    text-shadow: none;
+}
+
+a {
+    transition: color 0.5s;
+    text-decoration: none;
+    &:hover {
+        color: $primary-color;
+    }
+}

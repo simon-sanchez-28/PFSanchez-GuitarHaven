@@ -1,5 +1,3 @@
-$spacing: 20px;
-
 .aboutUsContainer {
     display: flex;
     align-items: center;
@@ -25,6 +23,9 @@ $spacing: 20px;
     .aboutUsTextWrapper {
         flex: 1;
         padding: $spacing;
+        b {
+            text-shadow: none;
+        }
 
         .aboutUsName {
             border-bottom: 1px solid black;

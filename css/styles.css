@@ -11,10 +11,10 @@
 }
 
 .nav-link {
-  transition: all 0.5s;
+  transition: color 0.5s;
 }
 .nav-link:hover {
-  border-bottom: 0.1px solid black;
+  color: white;
 }
 
 .logoImage {
@@ -249,6 +249,9 @@ main .descriptionWrapper .description1 {
   flex: 1;
   padding: 20px;
 }
+.aboutUsContainer .aboutUsTextWrapper b {
+  text-shadow: none;
+}
 .aboutUsContainer .aboutUsTextWrapper .aboutUsName {
   border-bottom: 1px solid black;
   margin-bottom: 10px;
@@ -444,6 +447,18 @@ b {
 
 .placeholder {
   margin-left: 1rem;
+}
+
+.noShadow {
+  text-shadow: none;
+}
+
+a {
+  transition: color 0.5s;
+  text-decoration: none;
+}
+a:hover {
+  color: #E79115;
 }
 
 /*# sourceMappingURL=styles.css.map */

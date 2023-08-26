@@ -18,10 +18,10 @@
 }
 
 .nav-link {
-    transition: all 0.5s;
+    transition: color 0.5s;
 
     &:hover {
-        border-bottom: 0.1px solid black;
+        color: white;
     }
 }
 
