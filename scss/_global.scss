@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAEDE3;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 1000;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+b {
+    @include boldFontStyles;
+}
+
+.titles {
+    @include centeredTitles;
+}
+
+.placeholder {
+    margin-left: 1rem;
+}
+
+.noShadow {
+    text-shadow: none;
+}
+
+a {
+    transition: color 0.5s;
+    text-decoration: none;
+    &:hover {
+        color: $primary-color;
+    }
+}
