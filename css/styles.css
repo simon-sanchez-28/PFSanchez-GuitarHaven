@@ -80,6 +80,11 @@
   width: 16rem;
   border: 1px solid #a8b8d0;
 }
+@media (max-width: 426px) {
+  .productGrid .card {
+    width: 18rem;
+  }
+}
 .productGrid .productHeader {
   padding: 5px;
   width: 100%;
